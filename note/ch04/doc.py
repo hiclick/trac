@@ -2,6 +2,7 @@
 __author__ = 'Christen'
 
 toc = ['history', 'novel', 'swordsman', 'fairytales', 'biography', 'manage', 'essay', 'philosophy', 'program']
+
 toc = ['ch-male', 'ch-female', 'ch-band']
 
 toc = ['getting-to-know-the-work-area', 'basic-photo-corrections', 'working-with-selections', 'layer-basics',
@@ -44,15 +45,17 @@ toc = ['Overview','Architecture','Environment-Setup','Hello-World-Example','IoC-
 
 toc = ['Overview','Basics','Selectors','Attributes','Traversing','CSS','DOM','Events','AJAX','Effects']
 
-noteType = "jQuery"
+toc = ['CSS and Documents','Selectors','Structure and the Cascade','Values and Units','Fonts','Text Properties','Basic Visual Formatting','Padding, Borders, and Margins','Colors and Backgrounds','Floating and Positioning','Table Layout','Lists and Generated Content','User Interface Styles','Non-Screen Media']
+
+noteType = "CSS"
 
 #toc.sort()
 
 s = '''
 
-jQuery is a fast and concise JavaScript library created by John Resig in 2006.
+Cascading Style Sheets (CSS) are a powerful way to affect the presentation of a document or a collection of documents.
 
-jQuery simplifies HTML document traversing, event handling, animating, and Ajax interactions for Rapid Web Development.
+Obviously, CSS is basically useless without a document of some sort, since it would have no content to present.
 
 ## 二级标题
 
@@ -62,7 +65,7 @@ jQuery simplifies HTML document traversing, event handling, animating, and Ajax 
 
 for fa in toc:
     # print "[" + fa.replace("-", " ").capitalize() + "](#docs/" + fa + ")"
-    print "1. [" + fa.replace("-"," ") + "](#docs/jquery/" + fa.lower().replace(" ","-") + ")"
-    with open("doc/jquery/" + fa.lower().replace(" ","-") + ".md", "w") as f:
+    print "1. [" + fa.replace("-"," ") + "](#docs/css/" + fa.lower().replace(" ","-") + ")"
+    with open("doc/css/" + fa.lower().replace(" ","-") + ".md", "w") as f:
         f.write("# " + noteType + " - " + fa.replace("JSP-","").replace("-"," ") )
         f.write(s)
