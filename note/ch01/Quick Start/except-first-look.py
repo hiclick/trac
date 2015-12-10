@@ -1,5 +1,7 @@
+# -*- coding: utf-8 -*-
+
 try:
-    fh = open("lines.txt")
+    fh = open("lines.tx")
     for line in fh.readlines():
         print line,
 
